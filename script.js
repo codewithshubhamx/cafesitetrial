@@ -130,7 +130,7 @@ document.getElementById("enterBtn").addEventListener("click",async ()=>{
 });
 
 const cafeMusic = document.getElementById("cafeMusic");
-cafeMusic.volume = 0.15;
+cafeMusic.volume = 0.05;
 let musicOn = false;
 
 document.getElementById("soundBtn").addEventListener("click", async ()=>{
