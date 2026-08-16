@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rettika & Shubham Café ❤️</title>
+<meta name="description" content="Rettika & Shubham Café — coffee, conversations and little moments.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="intro" class="intro">
+  <div class="intro-glow"></div>
+  <div class="intro-content">
+    <div class="heart-mark">♥</div>
+    <p>WELCOME TO</p>
+    <h1>Rettika <span>&</span> Shubham</h1>
+    <div class="line"></div>
+    <small>A little place made with a lot of love.</small>
+    <button id="enterBtn">Enter Café</button>
+  </div>
+</div>
+
+<div id="hearts"></div>
+
+<header class="nav">
+  <a class="brand" href="#home">Rettika <i>&</i> Shubham <span>Café</span></a>
+  <nav id="nav">
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#story">Our Story</a>
+    <a href="#moments">Moments</a>
+    <a href="#contact">Visit</a>
+  </nav>
+  <button class="sound" id="soundBtn" title="Ambience">♪</button>
+  <button class="cart" onclick="openCart()">🛍 <b id="cartCount">0</b></button>
+  <button class="menu-toggle" onclick="toggleNav()">☰</button>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-copy reveal">
+    <p class="kicker">COFFEE • LOVE • LITTLE MOMENTS</p>
+    <h2>Where every cup<br>comes with a <em>story.</em></h2>
+    <p class="lead">Welcome to our little corner of the world — warm coffee, sweet conversations and memories worth keeping.</p>
+    <div class="actions">
+      <a href="#menu" class="btn gold">Explore the Menu</a>
+      <a href="#story" class="btn glass">Our little story ↓</a>
+    </div>
+    <div class="hero-note">“Some places serve coffee. We serve moments.”</div>
+  </div>
+  <div class="hero-cup reveal delay">
+    <div class="orbital one"></div><div class="orbital two"></div>
+    <div class="cup-shadow"></div>
+    <div class="cup-art"><span>☕</span></div>
+    <div class="floating-card"><small>Today's mood</small><strong>Sweet & Cozy</strong><span>♡</span></div>
+  </div>
+  <div class="scroll">SCROLL TO DISCOVER <span>↓</span></div>
+</section>
+
+<section id="menu" class="section menu-section">
+  <div class="heading center">
+    <p class="kicker">FROM OUR KITCHEN</p>
+    <h2>A menu made for <em>two.</em></h2>
+    <p>Pick something for yourself. Or, you know… “accidentally” order two.</p>
+  </div>
+  <div class="category">
+    <button class="active" data-cat="all">Everything</button>
+    <button data-cat="coffee">Coffee</button>
+    <button data-cat="bites">Bites</button>
+    <button data-cat="sweet">Sweet</button>
+  </div>
+  <div class="menu-grid" id="menuGrid"></div>
+</section>
+
+<section id="story" class="story section">
+  <div class="story-art">
+    <div class="polaroid p1"><div>☕</div><span>First coffee</span></div>
+    <div class="polaroid p2"><div>♥</div><span>Favorite person</span></div>
+    <div class="stamp">EST.<br><b>2026</b></div>
+  </div>
+  <div class="story-copy">
+    <p class="kicker">OUR LITTLE STORY</p>
+    <h2>It started with<br><em>two people.</em></h2>
+    <p>Rettika & Shubham Café isn't just a café. It's a tiny reminder that the best things in life are often simple: a warm drink, your favorite person, and nowhere else you need to be.</p>
+    <p>So we made a place where every table feels a little special and every visit can become a memory.</p>
+    <div class="signature">R <span>♥</span> S</div>
+  </div>
+</section>
+
+<section id="moments" class="moments section">
+  <div class="heading center">
+    <p class="kicker">THE CAFÉ FEELING</p>
+    <h2>Little moments, <em>big smiles.</em></h2>
+  </div>
+  <div class="moment-grid">
+    <article class="moment m1"><span>☕</span><b>Slow mornings</b><small>One more cup?</small></article>
+    <article class="moment m2"><span>🥐</span><b>Fresh bites</b><small>Made to share</small></article>
+    <article class="moment m3"><span>🌙</span><b>Late evenings</b><small>Stay a little longer</small></article>
+    <article class="moment m4"><span>💌</span><b>Sweet notes</b><small>For someone special</small></article>
+  </div>
+</section>
+
+<section class="love-note">
+  <div class="note-card">
+    <div class="wax">♥</div>
+    <p class="kicker">A LITTLE NOTE</p>
+    <h2>For Rettika, from Shubham</h2>
+    <p>“If I could choose one place to spend a thousand ordinary days, I'd choose a small café, two cups on the table, and you sitting across from me.”</p>
+    <div class="tiny">— always, S ❤️</div>
+  </div>
+</section>
+
+<section id="contact" class="contact section">
+  <div class="contact-copy">
+    <p class="kicker">COME SAY HELLO</p>
+    <h2>Your table<br>is waiting.</h2>
+    <p>41 Café Street, Kolkata<br>West Bengal — 700001</p>
+    <p><b>Every day</b> · 7:00 AM — 10:30 PM</p>
+    <a class="phone" href="tel:+919051858997">+91 90518 58997</a>
+  </div>
+  <div class="reserve">
+    <p class="kicker">MAKE IT A DATE</p>
+    <h3>Reserve a table</h3>
+    <input id="rName" placeholder="Your name">
+    <input id="rPhone" placeholder="Phone number">
+    <select id="rPeople"><option>2 people</option><option>3 people</option><option>4 people</option><option>5+ people</option></select>
+    <input id="rDate" type="date">
+    <button class="btn gold full" onclick="reserve()">Reserve My Table ♥</button>
+    <p id="reserveMsg"></p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="brand">Rettika <i>&</i> Shubham <span>Café</span></div>
+  <p>Made for coffee lovers & hopeless romantics.</p>
+  <small>© 2026 Rettika & Shubham Café</small>
+</footer>
+
+<div class="modal" id="cartModal">
+  <div class="modal-box">
+    <button class="close" onclick="closeCart()">×</button>
+    <p class="kicker">YOUR LITTLE ORDER</p>
+    <h2>Ready to make it sweet?</h2>
+    <div id="cartItems"></div>
+    <div class="total"><span>Total</span><b id="cartTotal">₹0</b></div>
+    <button class="btn gold full" onclick="placeOrder()">Place Order ♥</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+<audio id="cafeMusic" loop preload="auto"><source src="die-with-a-smile.mp3" type="audio/wav"></audio>
+<script src="script.js"></script>
+</body>
+</html>
